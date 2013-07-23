@@ -1,0 +1,75 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPageadmin.master.cs" Inherits="MasterPageadmin" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Untitled Page</title>
+    <link href="screen.css" rel="stylesheet" type="text/css" />
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+    
+    <div id="header">
+
+		<%--<div id="meta">
+
+			<a href="index.html" class="marr">Home</a> | <a href="#" class="marl marr">Email</a> | <a href="#" class="marl">Search</a>																																															<div class="inner_copy"><a href="http://www.greatdirectories.org/">web directories</a><a href="http://www.bestfreetemplates.info/">free CSS templates</a></div>
+
+		</div>--%>
+
+<ul id="menu">
+
+			<li><a href="admin.aspx"><font color="green"><b>Home</b></font></a></li>																																												
+
+			<%--<li><a href="map.aspx">Delhi Map</a></li>
+
+			<li><a href="">Services</a></li>
+
+			<li><a href="touristattractions.aspx">Tourist attractions</a></li>
+--%>
+			<li><a href="sf1.aspx"><font color="green"><b>View Signups</b></font></a></li>
+<li><a href="uf1.aspx"><font color="green"><b>View Feedback</b></font></a></li>
+<li><a href="Administrator.aspx"><font color="green"><b>Add Package</b></font></a></li>
+		</ul>
+
+		<ul id="forum">
+
+			
+		<li><a href="admin2.aspx"><font color="green"><b>View Packages</b></font></a></li>	
+		<li><a href="admin1.aspx"><font color="green"><b>View Members</b></font></a></li>	
+		<%--<li><a href="login.aspx">signout</a></li>	--%>
+              
+		</ul>
+		
+	 </div>
+	 
+	<br />
+	<br />
+	<br />
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+        
+        	            <div id="footer">
+
+		            <div>
+
+<a href="admin.aspx">Home</a>   |   <a href="sf1.aspx">view signups</a>   |   <a href="uf1.aspx">view Feedback</a>	|<a href="Administrator.aspx">Add Package</a>|<a href="admin2.aspx">View Packages</a>|<a href="admin1.aspx">View Members</a>	
+		|	<a href="login.aspx">Sign Out</a>																																																																											
+
+		</div>
+
+		<p id="copy">Copyright ©. All rights reserved.</p>
+
+	</div>
+            </div>
+
+    </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,66 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Untitled Page</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+
+    <form id="form1" runat="server">
+   
+    <div>
+    <%--header starts here--%>
+    <div id="header">
+			<ul id="menu">
+
+			<li><a href="login.aspx">Home</a></li>																																												
+
+			<li><a href="map.aspx">Delhi Map</a></li>
+
+			<li><a href="service.aspx">Services</a></li>
+
+			<li><a href="touristattractions.aspx">Tourist attractions</a></li>
+
+			<li><a href="contactus.aspx"><font color="silver"><b>Contact Us</b></font></a></li>
+
+		</ul>
+
+		<ul id="forum">
+
+			<li><a href="TourPackages.aspx">Packages</a></li>
+			<li><a href="feedback.aspx">Feedback</a></li>
+			<li><a href="login.aspx"><font color="silver">Signout</font></a></li>
+			  
+		</ul>
+	</div>
+	<br />
+	<br />
+	<br />
+    <%--header ends here--%>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+        <%--footer starts here--%>
+         <div id="footer">
+
+		            <div>
+
+<a href="login.aspx">Home</a>   |   <a href="map.aspx">Delhi map</a>   |   <a href="service.aspx">Services</a>   |   <a href="touristattractions.aspx">Tourist attractions</a>   |   <a href="contactus">Contact us</a>   |   <a href="feedback.aspx">Feedback</a>																																																																													
+
+		</div>
+
+		<p id="copy">Copyright ©. All rights reserved.</p>
+
+	</div>
+            </div>
+    <%--footer ends here--%>
+    </div>
+   
+    </form>
+</body>
+</html>
